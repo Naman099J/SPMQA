@@ -9,6 +9,93 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gabriela&family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <style>
+            *{
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            left: 0;
+            }
+            body{
+                background-image: url(bg.jpg);
+                background-size: cover;
+                opacity: 0.8;
+            }
+            #img{
+                width: 130px;
+                height: 50px;
+            }
+            .nav{
+                background-color: #9bb9b6;
+                width: 100%;
+                /* height: 60px; */
+            }
+            .nav ul{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .nav ul li{
+                list-style: none;
+                margin: 7px 16px;
+                align-self: center;
+                font-size: larger;
+            }
+            .navi{
+                position: relative;
+            }
+            .navi::after{
+                content:'';
+                background:red;
+                width: 0;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left:0;
+                transition: width 0.6s;
+            }
+            .navi:hover::after{
+                cursor: pointer;
+                width:100%;
+            }
+            /* .nav ul li:hover{
+                cursor: pointer;
+                text-decoration: overline;
+            } */
+            #srch{
+                margin-left: 140px;
+                height: 26px;
+                border-radius: 14px;
+                padding: 15px;
+                border: none;
+                width: 272px;
+                background-color: aliceblue;
+                box-shadow: 3px 3px 5px -1px black;
+            }
+            #btn{
+                margin-left: 55px;
+                width: 117px;
+                height: 30px;
+                font-size: 17px;
+                border-radius: 5px;
+                background-color: #58ac7f;
+                color: white;
+                box-shadow: 3px 3px 5px -1px black;
+                border:3px outset black;
+            }
+            #btn:hover{
+                cursor: pointer;
+                border-style: inset;
+            }
+            #tot{
+                position: absolute;
+                top: 8px;
+                left: 1207px;
+                color: rgb(255, 0, 0);
+                font-size: 20px;
+            }
+            #i_cart{
+                margin-left: 50px;
+            }
+    </style>
 </head>
 <body>
     <nav class="nav">
